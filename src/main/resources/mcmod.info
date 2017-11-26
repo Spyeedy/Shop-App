@@ -1,0 +1,16 @@
+[
+{
+  "modid": "spyapp",
+  "name": "Spyeedy's Applications Mod",
+  "description": "Adds in new applications to the laptop in the Device Mod",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Spyeedy", "MrCrayfish"],
+  "credits": "MrCrayfish for making the Device Mod",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

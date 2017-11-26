@@ -1,0 +1,59 @@
+
+# Application Titles
+app.spyshop.shop.name=Shop
+
+# Shop
+shop.balance=Balance:
+appShop.cooked_porkchop=Cooked Porkchop
+appShop.cooked_fish=Cooked Fish
+appShop.cooked_salmon=Cooked Salmon
+appShop.steak=Steak
+appShop.cooked_chicken=Cooked Chicken
+appShop.cooked_rabbit=Cooked Rabbit
+appShop.cooked_mutton=Cooked Mutton
+appShop.apple=Apple
+appShop.golden_apple=Golden Apple
+appShop.enchanted_golden_apple=Enchanted Golden Apple
+
+appShop.leather_helmet=Leather Helmet
+appShop.leather_chestplate=Leather Chestplate
+appShop.leather_leggings=Leather Leggings
+appShop.leather_boots=Leather Boots
+appShop.golden_helmet=Golden Helmet
+appShop.golden_chestplate=Golden Chestplate
+appShop.golden_leggings=Golden Leggings
+appShop.golden_boots=Golden Boots
+appShop.iron_helmet=Iron Helmet
+appShop.iron_chestplate=Iron Chestplate
+appShop.iron_leggings=Iron Leggings
+appShop.iron_boots=Iron Boots
+appShop.diamond_helmet=Diamond Helmet
+appShop.diamond_chestplate=Diamond Chestplate
+appShop.diamond_leggings=Diamond Leggings
+appShop.diamond_boots=Diamond Boots
+
+appShop.wooden_pickaxe=Wooden Pickaxe
+appShop.wooden_axe=Wooden Axe
+appShop.wooden_shovel=Wooden Shovel
+appShop.wooden_hoe=Wooden Hoe
+appShop.wooden_sword=Wooden Sword
+appShop.golden_pickaxe=Golden Pickaxe
+appShop.golden_axe=Golden Axe
+appShop.golden_shovel=Golden Shovel
+appShop.golden_hoe=Golden Hoe
+appShop.golden_sword=Golden Sword
+appShop.iron_pickaxe=Iron Pickaxe
+appShop.iron_axe=Iron Axe
+appShop.iron_shovel=Iron Shovel
+appShop.iron_hoe=Iron Hoe
+appShop.iron_sword=Iron Sword
+appShop.diamond_pickaxe=Diamond Pickaxe
+appShop.diamond_axe=Diamond Axe
+appShop.diamond_shovel=Diamond Shovel
+appShop.diamond_hoe=Diamond Hoe
+appShop.diamond_sword=Diamond Sword
+
+appShop.category.food=Food
+appShop.category.armor=Armor
+appShop.category.tool=Tool
+appShop.category.block=Block
