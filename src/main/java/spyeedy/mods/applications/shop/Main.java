@@ -52,12 +52,6 @@ public class Main {
 		ApplicationManager.registerApplication(new ResourceLocation(MODID, "shop"), ApplicationShop.class);
 		
 		TaskManager.registerTask(TaskBuy.class);
-		
-		Laptop.addWallpaper(new ResourceLocation(MODID + ":textures/gui/background_1.png"));
-		Laptop.addWallpaper(new ResourceLocation(MODID + ":textures/gui/background_2.png"));
-		Laptop.addWallpaper(new ResourceLocation(MODID + ":textures/gui/background_3.png"));
-		Laptop.addWallpaper(new ResourceLocation(MODID + ":textures/gui/background_4.png"));
-		Laptop.addWallpaper(new ResourceLocation(MODID + ":textures/gui/background_5.png"));
 	}
 	
 	@EventHandler
