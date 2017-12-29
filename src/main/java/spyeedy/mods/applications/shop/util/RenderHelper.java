@@ -8,12 +8,12 @@ public class RenderHelper {
 	static Minecraft mc = Minecraft.getMinecraft();
 	
 	public static void drawStringWithOutline(String string, int posX, int posY, int fontColor, int outlineColor) {
-		mc.fontRendererObj.drawString(string, posX + 1, posY, outlineColor);
-		mc.fontRendererObj.drawString(string, posX - 1, posY, outlineColor);
-		mc.fontRendererObj.drawString(string, posX, posY + 1, outlineColor);
-		mc.fontRendererObj.drawString(string, posX, posY - 1, outlineColor);
+		mc.fontRenderer.drawString(string, posX + 1, posY, outlineColor);
+		mc.fontRenderer.drawString(string, posX - 1, posY, outlineColor);
+		mc.fontRenderer.drawString(string, posX, posY + 1, outlineColor);
+		mc.fontRenderer.drawString(string, posX, posY - 1, outlineColor);
 
-		mc.fontRendererObj.drawString(string, posX, posY, fontColor);
+		mc.fontRenderer.drawString(string, posX, posY, fontColor);
 	}
 	
 	public static String unlocaliseName(String name) {

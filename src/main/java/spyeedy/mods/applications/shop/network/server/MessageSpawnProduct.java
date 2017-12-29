@@ -36,9 +36,9 @@ public class MessageSpawnProduct implements IMessage {
 	public static class Handler implements IMessageHandler<MessageSpawnProduct, IMessage> {
 		@Override
 		public IMessage onMessage(MessageSpawnProduct message, MessageContext ctx) {
-			WorldServer thread = (WorldServer) ctx.getServerHandler().playerEntity.world;
+			WorldServer thread = (WorldServer) ctx.getServerHandler().player.world;
 			thread.addScheduledTask(() -> {
-				EntityPlayer player = ctx.getServerHandler().playerEntity;
+				EntityPlayer player = ctx.getServerHandler().player;
 				if (!message.product.isEmpty()) {
 					player.world.spawnEntity(new EntityItem(player.world, player.posX, player.posY, player.posZ, message.product));
 				}

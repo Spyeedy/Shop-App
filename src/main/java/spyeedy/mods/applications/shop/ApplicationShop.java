@@ -3,7 +3,7 @@ package spyeedy.mods.applications.shop;
 import java.awt.Color;
 
 import com.mrcrayfish.device.api.app.Application;
-import com.mrcrayfish.device.api.app.Icon;
+import com.mrcrayfish.device.api.app.Icons;
 import com.mrcrayfish.device.api.app.component.Button;
 import com.mrcrayfish.device.api.app.component.ItemList;
 import com.mrcrayfish.device.api.app.component.Label;
@@ -14,10 +14,8 @@ import com.mrcrayfish.device.api.utils.BankUtil;
 import com.mrcrayfish.device.api.utils.RenderUtil;
 import com.mrcrayfish.device.core.Laptop;
 
-import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
-import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.text.TextFormatting;
 import spyeedy.mods.applications.shop.data.Category;
@@ -167,9 +165,9 @@ public class ApplicationShop extends Application {
 			}
 			
 			
-			btnBuy = new Button(180, 86, "Buy", Icon.SHOPPING_CART);
+			btnBuy = new Button(180, 86, "Buy", Icons.SHOPPING_CART);
 			btnBuy.setEnabled(false);
-			btnBuy.setClickListener((c, mouseButton) -> {
+			btnBuy.setClickListener((int mouseX, int mouseY, int mouseButton) -> {
 				if (mouseButton == 0) {
 					int qty;
 					if (qtyField.getText().equals("0")) {
@@ -289,7 +287,7 @@ public class ApplicationShop extends Application {
 			addNumberClickListener(btn0, qtyField, 0);
 			
 			btnClr = new Button(248, 89, 35, 16, "Clear");
-			btnClr.setClickListener((c, mouseBtn) -> {
+			btnClr.setClickListener((int mouseX, int mouseY, int mouseButton) -> {
 				qtyField.setText("0");
 			});
 			
@@ -378,7 +376,7 @@ public class ApplicationShop extends Application {
 	}
 	
 	private void addNumberClickListener(Button btn, TextField field, final int number) {
-		btn.setClickListener((c, mouseBtn) -> {
+		btn.setClickListener((int mouseX, int mouseY, int mouseButton) -> {
 			if (!(field.getText().equals("0") && number == 0) ) {
 				if (field.getText().equals("0")) field.clear();
 				field.writeText(Integer.toString(number));
