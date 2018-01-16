@@ -64,13 +64,13 @@ public class ApplicationShop extends Application {
 	public void init() {
 		// APPLICATION
 		{			
-			labelBalance = new Label(TextFormatting.BOLD + RenderHelper.unlocaliseName("shop.balance"), 2, 2);
+			labelBalance = new Label(TextFormatting.BOLD + RenderHelper.unlocaliseName("appShop.balance"), 2, 2);
 			labelBalance.setShadow(false);
-			labelBalance.setTextColour(Color.BLACK);
+			labelBalance.setTextColor(Color.BLACK);
 			
 			labelAmount = new Label("Loading balance...", 53, 2);
 			labelAmount.setShadow(false);
-			labelAmount.setTextColour(Color.BLUE);
+			labelAmount.setTextColor(Color.BLUE);
 			
 			BankUtil.getBalance((nbt, success) ->
 			{
@@ -328,8 +328,6 @@ public class ApplicationShop extends Application {
 				labelQty.setText("" + 64);
 			}
 			
-			String qty = "Qty: " + qtyField.getText();
-			
 			labelTimes.setText("x");
 		}
 
@@ -347,20 +345,20 @@ public class ApplicationShop extends Application {
 			int index = foodList.getSelectedIndex();
 			RenderUtil.renderItem(x + 180, y + 45, ShopData.foodList.get(index).getStackProduct(), false);
 			labelPrice.setText("$" + (ShopData.foodList.get(index).getPrice() * qty));
-			labelPrice.setTextColour(Color.CYAN);
+			labelPrice.setTextColor(Color.CYAN);
 		}
 		
 		if (armorList.getSelectedIndex() >= 0) {
 			int index = armorList.getSelectedIndex();
 			RenderUtil.renderItem(x + 180, y + 45, ShopData.armorList.get(armorList.getSelectedIndex()).getStackProduct(), false);
 			labelPrice.setText("$" + (ShopData.armorList.get(index).getPrice() * qty));
-			labelPrice.setTextColour(Color.CYAN);
+			labelPrice.setTextColor(Color.CYAN);
 		}
 		if (toolList.getSelectedIndex() >= 0) {
 			int index = toolList.getSelectedIndex();
 			RenderUtil.renderItem(x + 180, y + 45, ShopData.toolList.get(index).getStackProduct(), false);
 			labelPrice.setText("$" + (ShopData.toolList.get(index).getPrice() * qty));
-			labelPrice.setTextColour(Color.CYAN);
+			labelPrice.setTextColor(Color.CYAN);
 		}
 	}
 

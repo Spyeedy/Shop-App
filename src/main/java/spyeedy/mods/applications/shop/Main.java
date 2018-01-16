@@ -21,12 +21,12 @@ import spyeedy.mods.applications.shop.network.server.MessageSpawnProduct;
 import spyeedy.mods.applications.shop.proxy.CommonProxy;
 import spyeedy.mods.applications.shop.tasks.TaskBuy;
 
-@Mod(modid = Main.MODID, name = Main.NAME, version = Main.VERSION, dependencies = Main.DEPENDENCY)
+@Mod(modid = Main.MODID, name = Main.NAME, version = Main.VERSION, dependencies = Main.DEPENDENCY, acceptedMinecraftVersions = Reference.WORKING_MC_VERSION)
 public class Main {
 
 	public static final String MODID = "spyshop";
-	public static final String NAME = "Spyeedy's Shop Application";
-	public static final String VERSION = "1.11.2-1.0";
+	public static final String NAME = "ShopPlus";
+	public static final String VERSION = "1.12.2-1.0";
 	public static final String CLIENT_PROXY = "spyeedy.mods.applications.shop.proxy.ClientProxy";
 	public static final String SERVER_PROXY = "spyeedy.mods.applications.shop.proxy.CommonProxy";
 	public static final String DEPENDENCY = "required-after:cdm@[" + Reference.VERSION + ",)";
@@ -39,9 +39,6 @@ public class Main {
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		proxy.preInit();
-		ShopData.registerFoodProducts();
-		ShopData.registerArmorProducts();
-		ShopData.registerToolProducts();
 	}
 	
 	@EventHandler
@@ -64,6 +61,9 @@ public class Main {
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 		proxy.postInit();
+		ShopData.registerFoodProducts();
+		ShopData.registerArmorProducts();
+		ShopData.registerToolProducts();
 	}
 	
 	public void registerMessage() {
